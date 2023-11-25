@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minha pagina minha vida</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      h1 {
+        color: white;
+        font-family:Roboto, 'San Francisco', 'Segoe UI';
+        font-weight:  400;
+      }
+      p {
+        color: white;
+      }
+      h2 {
+        color: white;
+        font-family:Roboto, 'San Francisco', 'Segoe UI';
+      }
+      h3 {
+        color: white;
+        font-family:Roboto, 'San Francisco', 'Segoe UI';
+      }
+      h4 {
+        color: white;
+      }
+      .acima {
+        line-height: 25%;
+      }
+      .nome {
+        font-size: 25px;
+        display: inline-block;
+      }
+      .visu {
+        font-family:Roboto, 'San Francisco', 'Segoe UI';
+
+      }
+      .foto {
+        border-radius: 50%;
+        width: 8em;
+        float: left;
+        border-style: inset;
+        border-color: transparent;
+        border-width: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mansucrito" class="acima">
+     <img src="https://lh3.googleusercontent.com/pw/ADCreHcBmedmCpodcXo0g8DArdn3IqvHYU4YJ1LVEO8x0EJ9_VfPiTfQpn12qWKLSHB8pc2-5OdF0_DWhvX_7qX23Zlqm2LOdrO5bhKEpPyIH4UmsjW0QB1dTjfuIU87-Cr6fIw3pTxYfRakfEfagsJ9juqIbA=w974-h974-s-no-gm?authuser=0" alt="" class="foto">
+    <h1 id="nome" class="nome"><strong>Marcos Ricardo - 16y</strong></h1>
+    <h3>@omarcosfi</h3>
+    </div>
+    <div id="visu" class="visu">
+      <h2 class="visu"><strong>23</strong> visualizações (teste)</h2>
+    </div>
+    <script>
+      var elemento = document.getElementById('nome');
+      var estilos = window.getComputedStyle(elemento, null);
+      var tamanho = estilos.getPropertyValue('font-size');
+      var largura = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+    </script>
+  </body>
+</html>
